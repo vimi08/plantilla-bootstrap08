@@ -16,6 +16,7 @@
   </head>
   <body>
     <header>
+
       <nav class="navbar bg-primary navbar-expand-lg">
         <div class="container">
           <a href="./index.html" class="navbar-brand">Plantilla de Bootstrap</a>
@@ -49,24 +50,24 @@
 
     <main>
       <!-- Intro -->
-      <section>
-        <article class="container text-center mt-4 py-5 rounded-3 mb-5 border">
-          <h1>Estilos de Bootstrap</h1>
-          <p>
-            Una guía visual para aprender clases de diseños, espaciados y
-            componentes.
-          </p>
-        </article>
+      <article class="container text-center mt-4 py-5 rounded-3 mb-5 border">
+        <h1>Estilos de Bootstrap</h1>
+        <p>
+          Una guía visual para aprender clases de diseños, espaciados y
+          componentes.
+        </p>
+      </article>
 
-        <article class="container-fluid text-center mt-4 py-5 rounded-3 mb-5 border">
-          <h1>Contenedores</h1>
-          <p>
-            Un contenedor fluido en Bootstrap se crea utilizando la clase
-            <code>container-fluid</code>. Este tipo de contenedor ocupa el 100%
-            del ancho del viewport.
-          </p>
-        </article>
-      </section>
+      <article
+        class="container-fluid text-center mt-4 py-5 rounded-3 mb-5 border"
+      >
+        <h1>Contenedores</h1>
+        <p>
+          Un contenedor fluido en Bootstrap se crea utilizando la clase
+          <code>container-fluid</code>. Este tipo de contenedor ocupa el 100%
+          del ancho del viewport.
+        </p>
+      </article>
 
       <!-- Tipografía -->
       <section class="container my-4">
@@ -106,91 +107,206 @@
       <section>
         <h4>Bordes y sombras</h4>
         <div class="d-flex flex-wrap gap-3 bg-secondary px-4 py-5">
-          <div class="p-4 bg-primary-subtle border border-primary border-3 rounded shadow-sm">
+          <div
+            class="p-4 bg-primary-subtle border border-primary border-3 rounded shadow-sm"
+          >
             Sombra pequeña
           </div>
-          <div class="p-4 bg-primary-subtle border border-2 border-success border-start-0 rounded-end shadow">
+          <div
+            class="p-4 bg-primary-subtle border border-2 border-success border-start-0 rounded-end shadow"
+          >
             Sombra media
           </div>
-          <div class="p-4 bg-primary-subtle shadow-lg rounded-circle d-flex align-items-center justify-content-center text-center"
-               style="width: 120px; height: 120px">
+          <div
+            class="p-4 bg-primary-subtle shadow-lg rounded-circle d-flex align-items-center justify-content-center text-center"
+            style="width: 120px; height: 120px"
+          >
             Sombra grande
           </div>
         </div>
 
         <h4>Opacidad</h4>
-        <div class="p-2 bg-primary text-white opacity-100 mb-1">Opacidad al 100%</div>
-        <div class="p-2 bg-primary text-white opacity-75 mb-1">Opacidad al 75%</div>
-        <div class="p-2 bg-primary text-white opacity-50 mb-1">Opacidad al 50%</div>
-        <div class="p-2 bg-primary text-white opacity-25 mb-1">Opacidad al 25%</div>
+        <div class="p-2 bg-primary text-white opacity-100 mb-1">
+          Opacidad al 100%
+        </div>
+        <div class="p-2 bg-primary text-white opacity-75 mb-1">
+          Opacidad al 75%
+        </div>
+        <div class="p-2 bg-primary text-white opacity-50 mb-1">
+          Opacidad al 50%
+        </div>
+        <div class="p-2 bg-primary text-white opacity-25 mb-1">
+          Opacidad al 25%
+        </div>
       </section>
 
       <!-- Botones -->
-      <section>
+      <article id="buttons" class="my-4 border-bottom pb-4">
         <h3>3. Botones y estados</h3>
-        <article id="buttons" class="my-4 border-bottom pb-4">
-          <div class="d-flex flex-wrap gap-2 mb-3">
-            <button class="btn btn-pink">Prueba</button>
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-outline-primary">Outline</button>
-            <button class="btn btn-primary disabled">Deshabilitado</button>
-          </div>
 
-          <div class="d-flex flex-wrap align-items-center gap-2">
-            <button class="btn btn-success btn-lg">Grande</button>
-            <button class="btn btn-warning">Normal</button>
-            <button class="btn btn-danger btn-sm">Pequeño</button>
-            <button class="btn btn-link">Enlace</button>
-          </div>
-        </article>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <button class="btn btn-pink">Prueba</button>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-outline-primary">Outline</button>
+          <button class="btn btn-primary disabled">Deshabilitado</button>
+        </div>
 
-        <!-- Cards con Flexbox -->
-        <article>
-          <h3>4. Tarjetas (Cards) con Flexbox</h3>
-          <div class="d-flex flex-column flex-md-row gap-4">
-            <!-- Card con imagen -->
-            <div class="card flex-1">
-              <div class="card-header">Header</div>
-              <img src="./img/istockphoto-1152144683-1024x1024.jpg"
-                   class="card-img-top"
-                   alt="Paisaje" />
-              <div class="card-body">
-                <h5 class="card-title">Título estilizado</h5>
-                <p class="card-text">Maquetado con flexbox puro de Bootstrap.</p>
-                <a href="#" class="btn btn-primary">Acción</a>
-              </div>
+        <div class="d-flex flex-wrap align-items-center gap-2">
+          <button class="btn btn-success btn-lg">Grande</button>
+          <button class="btn btn-warning">Normal</button>
+          <button class="btn btn-danger btn-sm">Pequeño</button>
+          <button class="btn btn-link">Enlace</button>
+        </div>
+      </article>
+
+      <!-- Cards con Flexbox -->
+      <article>
+        <h3>4. Tarjetas (Cards) con Flexbox</h3>
+        <div class="d-flex flex-column flex-md-row gap-4">
+          <!-- Card con imagen -->
+          <div class="card flex-grow-1">
+            <div class="card-header">Header</div>
+            <img
+              src="./img/istockphoto-1152144683-1024x1024.jpg"
+              class="card-img-top"
+              alt="Paisaje"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Título estilizado</h5>
+              <p class="card-text">Maquetado con flexbox puro de Bootstrap.</p>
+              <a href="#" class="btn btn-primary">Acción</a>
             </div>
+          </div>
 
-            <!-- Layout Flexible -->
-            <div class="flex-2">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body">
-                  <h3>Layout Flexible</h3>
-                  <p>
-                    Bootstrap permite combinar utilidades de flexbox para crear
-                    layouts complejos sin depender de las 12 columnas.
-                  </p>
-                  <p>
-                    En este caso creé mi propio estilo flex-1 y flex-2 usando
-                    propiedades de flexbox en mi CSS.
-                  </p>
+          <!-- Layout Flexible -->
+          <div class="card flex-grow-2 h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3>Layout Flexible</h3>
+              <p>
+                Bootstrap permite combinar utilidades de flexbox para crear
+                layouts complejos sin depender de las 12 columnas.
+              </p>
+              <p>
+                Aquí uso <code>flex-grow-1</code> y <code>flex-grow-2</code> en
+                lugar de clases personalizadas.
+              </p>
 
-                  <div class="vstack gap-2">
-                    <div class="p-3 border d-flex justify-content-between align-items-center rounded">
-                      Item de lista con Badge
-                      <span class="badge bg-primary rounded-pill">14</span>
-                    </div>
-                    <div class="p-3 border d-flex justify-content-between align-items-center rounded">
-                      Notificaciones
-                      <span class="badge bg-danger rounded-pill">Nuevo</span>
-                    </div>
-                  </div>
+              <div class="vstack gap-2">
+                <div
+                  class="p-3 border d-flex justify-content-between align-items-center rounded"
+                >
+                  Item de lista con Badge
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </div>
+                <div
+                  class="p-3 border d-flex justify-content-between align-items-center rounded"
+                >
+                  Notificaciones
+                  <span class="badge bg-danger rounded-pill">Nuevo</span>
                 </div>
               </div>
             </div>
           </div>
-        </article>
-      </section>
+        </div>
+      </article>
+      <article>
+        <h3>5. Tablas y Feedback</h3>
+        <div class="row g-4">
+          <!-- Columna izquierda: feedback + progress -->
+          <div class="col-md-6">
+            <p>
+              Las tablas en Bootstrap son responsive si usas la clase
+              <code>.table-responsive</code>, creando un scroll horizontal
+              dentro de la tabla.
+            </p>
+            <div class="alert alert-primary" role="alert">
+              <h2>¡Importante!</h2>
+              Dominar <code>d-flex</code>, <code>justify-content</code> y
+              <code>align-items</code> es la clave en el desarrollo moderno.
+            </div>
+            <p>A continuación tenemos una progress-bar:</p>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Animated striped example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                style="width: 75%"
+              >
+                75% progress
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna derecha: tabla -->
+          <div class="col-md-6">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Propiedad</th>
+                    <th>Clase Bootstrap</th>
+                    <th>Uso Responsivo</th>
+                    <th>Descripción Técnica</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Bordes</td>
+                    <td><code>.border-dashed</code></td>
+                    <td><code>.border-md-0</code></td>
+                    <td>
+                      Bootstrap no tiene dashed nativo; requiere CSS extra o
+                      estilos inline.
+                    </td>
+                    <td>Personalizado</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Grilla</td>
+                    <td><code>.col-md-8</code></td>
+                    <td><code>.col-12</code></td>
+                    <td>
+                      Sistema de 12 columnas ideal para anchos proporcionales
+                      (ej: 8 y 4).
+                    </td>
+                    <td>Nativo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Visibilidad</td>
+                    <td><code>.d-none</code></td>
+                    <td><code>.d-lg-block</code></td>
+                    <td>
+                      Oculta o muestra elementos según el breakpoint (xs, sm,
+                      md, lg, xl).
+                    </td>
+                    <td>Nativo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Tablas</td>
+                    <td><code>.table-responsive</code></td>
+                    <td><code>Automático</code></td>
+                    <td>
+                      Permite scroll horizontal en pantallas pequeñas para no
+                      romper el layout.
+                    </td>
+                    <td>Estructural</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
 
     <footer class="text-center bg-dark-subtle py-3">
@@ -198,4 +314,9 @@
     </footer>
 
     <script
-      src="https://
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
