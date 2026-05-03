@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Plantilla de componentes de Bootstrap" />
     <meta name="author" content="Ponce Victoria" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Plantilla Bootstrap</title>
   </head>
   <body>
     <header>
       <nav class="navbar bg-primary navbar-expand-lg">
-        <div class="conteiner">
+        <div class="container">
           <a href="./index.html" class="navbar-brand">Plantilla de Bootstrap</a>
           <button
             class="navbar-toggler"
+            type="button"
             data-bs-toggle="collapse"
             data-bs-target="#opcionesMenu"
+            aria-controls="opcionesMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,14 +46,156 @@
         </div>
       </nav>
     </header>
-    <main></main>
+
+    <main>
+      <!-- Intro -->
+      <section>
+        <article class="container text-center mt-4 py-5 rounded-3 mb-5 border">
+          <h1>Estilos de Bootstrap</h1>
+          <p>
+            Una guía visual para aprender clases de diseños, espaciados y
+            componentes.
+          </p>
+        </article>
+
+        <article class="container-fluid text-center mt-4 py-5 rounded-3 mb-5 border">
+          <h1>Contenedores</h1>
+          <p>
+            Un contenedor fluido en Bootstrap se crea utilizando la clase
+            <code>container-fluid</code>. Este tipo de contenedor ocupa el 100%
+            del ancho del viewport.
+          </p>
+        </article>
+      </section>
+
+      <!-- Tipografía -->
+      <section class="container my-4">
+        <article id="typography" class="border-bottom pb-4">
+          <h2 class="mb-4">1. Estilos de texto y tipografía</h2>
+          <div class="d-flex flex-column flex-md-row">
+            <div class="w-100">
+              <p>Los títulos pueden tener una clase especial llamada display</p>
+              <p>
+                Recuerda que puedes usar
+                <span class="badge bg-info rounded-pill">Flexbox</span>
+                para trabajar con elementos en filas o columnas.
+              </p>
+              <h2 class="display-1">Display 1</h2>
+              <h3 class="display-6">Display 6</h3>
+              <p class="h3 text-uppercase text-primary">
+                Texto mayúsculas azul
+              </p>
+              <p class="fst-italic text-decoration-line-through">
+                Texto itálico tachado
+              </p>
+            </div>
+            <div class="w-100">
+              <div class="p-3 bg-dark-subtle text-white rounded">
+                <p class="text-start">Alineado a la izquierda</p>
+                <p class="text-center">Alineado al centro</p>
+                <p class="text-end">Alineado a la derecha</p>
+                <p class="fw-bold">Texto en negrita</p>
+                <p class="fw-light">Texto ligero</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Bordes y sombras -->
+      <section>
+        <h4>Bordes y sombras</h4>
+        <div class="d-flex flex-wrap gap-3 bg-secondary px-4 py-5">
+          <div class="p-4 bg-primary-subtle border border-primary border-3 rounded shadow-sm">
+            Sombra pequeña
+          </div>
+          <div class="p-4 bg-primary-subtle border border-2 border-success border-start-0 rounded-end shadow">
+            Sombra media
+          </div>
+          <div class="p-4 bg-primary-subtle shadow-lg rounded-circle d-flex align-items-center justify-content-center text-center"
+               style="width: 120px; height: 120px">
+            Sombra grande
+          </div>
+        </div>
+
+        <h4>Opacidad</h4>
+        <div class="p-2 bg-primary text-white opacity-100 mb-1">Opacidad al 100%</div>
+        <div class="p-2 bg-primary text-white opacity-75 mb-1">Opacidad al 75%</div>
+        <div class="p-2 bg-primary text-white opacity-50 mb-1">Opacidad al 50%</div>
+        <div class="p-2 bg-primary text-white opacity-25 mb-1">Opacidad al 25%</div>
+      </section>
+
+      <!-- Botones -->
+      <section>
+        <h3>3. Botones y estados</h3>
+        <article id="buttons" class="my-4 border-bottom pb-4">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <button class="btn btn-pink">Prueba</button>
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-outline-primary">Outline</button>
+            <button class="btn btn-primary disabled">Deshabilitado</button>
+          </div>
+
+          <div class="d-flex flex-wrap align-items-center gap-2">
+            <button class="btn btn-success btn-lg">Grande</button>
+            <button class="btn btn-warning">Normal</button>
+            <button class="btn btn-danger btn-sm">Pequeño</button>
+            <button class="btn btn-link">Enlace</button>
+          </div>
+        </article>
+
+        <!-- Cards con Flexbox -->
+        <article>
+          <h3>4. Tarjetas (Cards) con Flexbox</h3>
+          <div class="d-flex flex-column flex-md-row gap-4">
+            <!-- Card con imagen -->
+            <div class="card flex-1">
+              <div class="card-header">Header</div>
+              <img src="./img/istockphoto-1152144683-1024x1024.jpg"
+                   class="card-img-top"
+                   alt="Paisaje" />
+              <div class="card-body">
+                <h5 class="card-title">Título estilizado</h5>
+                <p class="card-text">Maquetado con flexbox puro de Bootstrap.</p>
+                <a href="#" class="btn btn-primary">Acción</a>
+              </div>
+            </div>
+
+            <!-- Layout Flexible -->
+            <div class="flex-2">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h3>Layout Flexible</h3>
+                  <p>
+                    Bootstrap permite combinar utilidades de flexbox para crear
+                    layouts complejos sin depender de las 12 columnas.
+                  </p>
+                  <p>
+                    En este caso creé mi propio estilo flex-1 y flex-2 usando
+                    propiedades de flexbox en mi CSS.
+                  </p>
+
+                  <div class="vstack gap-2">
+                    <div class="p-3 border d-flex justify-content-between align-items-center rounded">
+                      Item de lista con Badge
+                      <span class="badge bg-primary rounded-pill">14</span>
+                    </div>
+                    <div class="p-3 border d-flex justify-content-between align-items-center rounded">
+                      Notificaciones
+                      <span class="badge bg-danger rounded-pill">Nuevo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
     <footer class="text-center bg-dark-subtle py-3">
-        <p>&copy; Todos los derechos reservados 2026</p>
+      <p>&copy; Ponce Victoria - Todos los derechos reservados 2026</p>
     </footer>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+      src="https://
