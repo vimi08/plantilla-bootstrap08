@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Plantilla de componentes de Bootstrap" />
     <meta name="author" content="Ponce Victoria" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -13,10 +13,10 @@
       crossorigin="anonymous"
     />
     <title>Contactos</title>
-</head>
+  </head>
 
-<body>
-     <header>
+  <body>
+    <header>
       <nav class="navbar bg-primary navbar-dark navbar-expand-lg">
         <div class="container">
           <a href="./index.html" class="navbar-brand">Plantilla de Bootstrap</a>
@@ -29,12 +29,12 @@
           </button>
         </div>
         <div class="collapse navbar-collapse" id="opcionesMenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto text-end p-2">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="./grilla.html">Grilla</a>
+              <a class="nav-link" href="./grilla.html">Grilla</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="./contactos.html">Contactos</a>
@@ -43,9 +43,34 @@
         </div>
       </nav>
     </header>
-    <main>
+   <main class="container my-4">
+    <h1 class="mb-3">Formulario con Stacks</h1>
+  <section class="border rounded p-3">
+    <form>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre y Apellido</label>
+          <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Ej:Francisco Pérez">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control form-control-sm" id="email" placeholder="Francisco19963@gmail.com">
+        </div>
+      </div>
+      <div class="mb-2">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control form-control-sm" id="mensaje" rows="3" placeholder="Aquí agregá tu consulta"></textarea>
+      </div>
+      <div class="form-check form-switch mb-2">
+        <input class="form-check-input" type="checkbox" id="aceptarTerminos">
+        <label class="form-check-label" for="aceptarTerminos">Aceptar términos</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+    </form>
+  </section>
+</main>
 
-    </main>
+
     <footer class="text-center bg-dark-subtle py-3">
       <p>&copy; Todos los derechos reservados 2026</p>
     </footer>
@@ -54,5 +79,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
